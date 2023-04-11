@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Survey Form 
+	</title>
+
+<!-- CSS -->
+
+	<style>
+        ::placeholder {
+         color: #71d9d9;
+         opacity: 1; } 
+         #role{
+			background-color:#205a8c29 ;
+			color: #71d9d9;
+		}
+        input{
+		background-color: #205a8c29;
+		color: #71d9d9;
+        }
+
+
+
+
+		body {
+			background-image: url('BG1.jpg');
+			font-family:"Brush Script MT", cursive;
+			text-align: center;
+			font-size: 25px;
+			color: #10a7e8;
+			text-shadow: 5px 5px 5px #8d1791;
+		
+		}
+
+	
+		form {
+			background-color: rgba(15, 25, 38, 0.653);
+			max-width: 1000px;
+			margin: 50px auto;
+			padding: 30px 30px;
+			box-shadow: 10px 10px 10px rgba(248, 222, 107, 0.269);
+			border-radius: 25px;
+			
+		}
+
+	
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		button {
+			background-color: #102449;
+			border: 1px solid #71d9d9;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<!-- Main Code -->
+
+<body>
+	<script src="js.js"></script>
+	<h1 style="font-family: 'Bauhaus 93', sans-serif; font-size: 60px;
+	 color: #0f1926; text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.489);">
+		Celestial Exploratory Survey Form</h1>
+		
+
+
+	<form id="form" method="get" action="thanks.html">
+
+
+		<div class="form-control">
+			<label for="name" id="label-name" >
+				Full Name
+			</label>
+
+	
+			<input type="text"
+				id="name"
+				style="border-radius:10px"
+				style="color:#71d9d9"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+
+			<input type="email"
+				id="email"
+				style="border-radius:10px"
+				style="color:#71d9d9"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+
+			<input type="text"
+				id="age"
+				style="border-radius:10px"
+				style="color:#71d9d9"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="number" id="label-age">
+				Contact Number
+			</label>
+
+			<input type="text"
+				id="number"
+				style="border-radius:10px"
+				style="color:#71d9d9"
+				placeholder="+91(10Digit)" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				What describes you the best ?
+			</label>
+
+			<select name="role" id="role" style="border-radius:10px">
+				<option value="enthuziastic">Enthuziastic</option>
+				<option value="astronaut">Astronaut</option>
+				<option value="explorer">
+					Explorer
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you like to explore outer space ?
+			</label>
+
+
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label>Which planet would you love to explore ?
+			</label>
+
+			<label for="inp-1" style="color: #71d9d9;">
+				<input type="checkbox"
+					name="inp">Neptune</input></label>
+			<label for="inp-2" style="color: #71d9d9;">
+				<input type="checkbox"
+					name="inp">Uranus</input></label>
+			<label for="inp-3" style="color: #71d9d9;">
+				<input type="checkbox"
+					name="inp">Saturn</input></label>
+			<label for="inp-4" style="color: #71d9d9;">
+				<input type="checkbox"
+					name="inp">Mars</input></label>
+			<label for="inp-5" style="color: #71d9d9;">
+				<input type="checkbox"
+					name="inp">Jupiter</input></label>
+			
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here" style="color: #71d9d9; border-radius:10px;
+				background-color:#205a8c29 ;">
+			</textarea>
+		</div>
+
+
+		<button type="submit" value="submit" onclick="return IsEmpty()" style="color: #10a7e8;text-shadow: 5px 5px 5px #8d1791;
+		">
+			Commit
+		</button>
+	</form>
+</body>
+
+</html>
